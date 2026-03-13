@@ -17,7 +17,7 @@ public class Adapter {
         portType = "USB-A";
         weight = 65.0;
         isOriginal = false;
-
+        System.out.println("Hello GitHub");
         System.out.println(" Brand: " + brand);
         System.out.println(" Wattage: " + wattage);
         System.out.println(" Port: " + portType);
