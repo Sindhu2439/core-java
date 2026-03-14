@@ -2,7 +2,7 @@ class Bat {
 
     static void batInfo() {
         byte size = 7;
-        short weight = 900;
+        short weight = 800;
         int price = 1500;
         long serialNo = 99999L;
         float length = 85.5f;
