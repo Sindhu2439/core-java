@@ -11,7 +11,7 @@ class Tyre {
             System.out.println("price is 1500");
             return 1500;
         }
-        if("Apollo" == brand && size == 16){
+        if("Apollo" == brand && size == 17){
             System.out.println("price is 1100");
             return 1100;
         }
