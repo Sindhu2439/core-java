@@ -1,0 +1,154 @@
+1)Java is a High level ,Object Oriented,platform independent programming language 
+ Java is platform independent because it contains JVM(Java Virtual machine) which is platform dependent it can run on any operating system so thata why it is follow the principlrs of WORA(Write Once Run Anywhere)
+
+
+2)JDK(java Development ToolKit) which is used to develop java programs
+Firstly it contains tools used to develop java programs and JRE(Java Runtime Environment) which is used to run java programs
+JRE- it provides libraries for java and also contains JVM
+JVM(Java Virtual Machine)- which converts Java code into byte code where it makes java independent
+
+
+3)Java Virtual machine is Platform dependent in Java which is used to excecute java programs .
+Mainly it converts java code into java byte code which helps java programs to run on any oprating system like Windows, Linux,Mac etc 
+
+
+4)WORA - Write Once Run Anywhere it refers to write the java program only once so tehre it creates byte code using JVM then by using that bytecode we can run any java program on any OS which contains JVM so JVM excecute the java program 
+
+5)bytecode is created when JVM compiles the Java program it created  (. class)it means it creates bytecode by using that  bytecode we excecute our java program without bytecode we cannot excecute java program on any platform 
+
+
+6)datatype describes the type of the data 
+it is divided into two types -1)primitive datatype:8 types:byte,short,int,long,float,double,char,boolean
+                                                  Ex int size;
+                                               2)non primitive datatype:infinity:String and any class 
+                                                  String size;
+7)default values represents no values assigned to the variable, it does not refer to any memory address
+                                     default value for primitive data type is :0
+                                     default value for non primitive datatype is : null
+                   class Mock{
+                         byte count;
+                         short size;
+                         int number;
+                         long noOfEmployee;
+                         float weight;
+                         double width;
+                         char letter;
+                          boolean attendance;
+ 
+                          static void interview(){
+                                    System.out.println("Mock interview assignment");
+                                    System.out.println("count"+count);
+                                   System.out.println("size"+size);
+                                   System.out.println("number"+number);
+                                   System.out.println("noOfEmployee"+noOfEmployee);
+                                   System.out.println("weight"+weight);
+                                   System.out.println("width"+width);
+                                  System.out.println("letter"+letter);
+                                  System.out.println("attendance"+attendance);
+}
+
+     }
+
+         
+              class MockRunner{
+                         public static void main(String[] args){
+                               Mock.interview();
+}
+}
+
+8) variables are used to store data in memeory address it reserves the memory address
+static variables variables declared using a static keyword at a class level:
+ex :  class Mock{
+                       static  byte count;
+                       static   short size;
+                                                  static void interview(){
+                                    System.out.println("Mock interview assignment");
+                                    System.out.println("count"+count);
+                                   System.out.println("size"+size);
+                                   }
+
+     }
+local variables  are variables which declare inside a method 
+ex:             void interview(){
+                  String name="Sindhu M V";
+                                    
+
+     }
+
+
+
+9)static method is a method which contains non access specifiers as a static keyword
+     method with a static keyword
+   we call static method by using class name followed by method name:
+
+Syntax:               class Mock{ 
+                               static void interview(){
+                                    }
+                                 }
+
+                           //method calling
+                                 class MockRunner{
+                         public static void main(String[] args){
+                               Mock.interview();
+}
+}
+10)
+
+
+class Shopkeeper{
+
+                   int[] sales= {12,45,78,56,34,39,90};
+                    int totalSales= 0;
+
+                      static void sales(){
+                        for(int i=0;i<sales.length;i++){
+                         totalsales  +=sales[i];
+                        }
+                     System.out.println("Total sales"+totalSale);
+                  if(sales[0]>sales[1] &&  sales[0]>sales[2] &&sales[0]>sales[3] &&sales[0]>sales[4] &&sales[0]>sales[5] &&sales[0]>sales[6]){
+                        System.out.println("Sunday");
+                  }
+
+             else  if(sales[1]>sales[0] &&  sales[1]>sales[2] &&sales[1]>sales[3] &&sales[1]>sales[4] &&sales[1]>sales[5] &&sales[1]>sales[6]){
+                        System.out.println("Monday");
+                  }
+            else  if(sales[2]>sales[0] &&  sales[2]>sales[1] &&sales[2]>sales[3] &&sales[2]>sales[4] &&sales[2]>sales[5] &&sales[2]>sales[6]){
+                        System.out.println("Tuesday");
+                  }
+           else  if(sales[3]>sales[0] &&  sales[3]>sales[1] &&sales[3]>sales[2] &&sales[3]>sales[4] &&sales[3]>sales[5] &&sales[3]>sales[6]){
+                        System.out.println("Wednesday");
+                  }
+          else  if(sales[4]>sales[0] &&  sales[4]>sales[1] &&sales[4]>sales[2] &&sales[4]>sales[3] &&sales[4]>sales[5] &&sales[4]>sales[6]){
+                        System.out.println("thursday");
+                  }
+        else  if(sales[5]>sales[0] &&  sales[5]>sales[1] &&sales[5]>sales[2] &&sales[5]>sales[3] &&sales[5]>sales[4] &&sales[1]>sales[6]){
+                        System.out.println("Friday");
+                  }
+       else{
+                  System.out.println("saturday");
+}
+
+}
+
+
+class ShopkeeperRunner{
+
+
+ public static void main(String[] args){
+   
+Shopkeeper.sales();
+}
+
+
+
+}
+          
+
+
+
+
+         
+
+                
+                            
+                                                
