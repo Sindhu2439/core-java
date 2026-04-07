@@ -1,0 +1,7 @@
+enum PanelType {
+
+    MONOCRYSTALLINE,
+    POLYCRYSTALLINE,
+    THIN_FILM
+
+}
