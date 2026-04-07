@@ -13,7 +13,7 @@ class PowerPlant {
 
     void show() {
 
-        System.out.println("Company Name: " + this.companyName);
+        System.out.println("Company Namee: " + this.companyName);
         System.out.println("Number Of Panels: " + this.numberOfPanels);
         System.out.println("Panel Type: " + this.type);
 
