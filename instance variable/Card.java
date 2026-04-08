@@ -12,9 +12,9 @@ class Card{
    
     void details(){
 	
-	  System.out.println("Card color: " +this.color);
-	  System.out.println("Card type: " +this.type);
-	  System.out.println("Card noOfSymbols: " +this.noOfSymbols);
+	  System.out.println("Card color : " +this.color);
+	  System.out.println("Card type : " +this.type);
+	  System.out.println("Card noOfSymbols : " +this.noOfSymbols);
 	  
 	
    
