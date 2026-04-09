@@ -1,0 +1,3 @@
+enum PearlType {
+    NATURAL, CULTURED, FRESHWATER
+}
