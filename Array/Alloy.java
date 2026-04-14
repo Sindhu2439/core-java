@@ -7,7 +7,7 @@ class Alloy {
         if (name != null) {
             if (this.index < names.length) {
                 this.names[index] = name;
-                System.out.println("name of the alloy: " + this.names[index]);
+                System.out.println("name of the alloy:: " + this.names[index]);
                 System.out.println("index of the current name is: " + this.index);
                 index++;
             }
