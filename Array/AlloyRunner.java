@@ -5,7 +5,7 @@ class AlloyRunner {
         alloy.save("Bronze");
         alloy.save("Brass");
         alloy.save("Titanium");
-        alloy.save("Duralumin");
+        alloy.save("Duraumin");
         alloy.store("Bronze");
         alloy.store("Nichrome");
     }
