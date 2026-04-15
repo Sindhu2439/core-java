@@ -14,11 +14,11 @@ class BroccoliStore {
                 index++;
 
             } else {
-                System.out.println("Storage is full");
+                System.out.println("Storage is full ");
             }
 
         } else {
-            System.out.println("broccoli cannot be null");
+            System.out.println("broccoli cannot be null ");
         }
     }
 
