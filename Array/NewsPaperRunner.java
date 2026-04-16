@@ -33,7 +33,7 @@ class NewsPaperRunner {
 		System.out.println(ref2);
 		store.updateLangByName("Times", Lang.TAMIL);
 		store.updateInkColorAndNoOfImagesAndFontSizeByNameAndHeightAndWeight(InkColor.GREEN, 10, 15, "Times", 30.5, 200);
-		NewsPaper ref3=new NewsPaper(Lang.TELUGU, "High", 6.0, 25, "Mother", 31.0, 210, "Header8", "Footer8", 14, 6, "Samrat", "Karnataka", InkColor.BLACK, 12);
+		NewsPaper ref3=new NewsPaper(Lang.TELUGU, "High", 6.0, 25, "Mother", 31.0, 210, "Header34", "Footer8", 14, 6, "Samrat", "Karnataka", InkColor.BLACK, 12);
 		store.replaceByPrintHouseAddress("Delhi",ref3);
 
 		store.displayAll();
