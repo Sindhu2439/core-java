@@ -1,33 +1,29 @@
 class CountryStore {
 
-    Country[] countries = new Country[10];
-    int index = 0;
+    Country[] countryArray = new Country[10];
+    int position = 0;
 
     void save(Country country) {
-        if (country != null && index < countries.length) {
-            countries[index++] = country;
+        if (country != null) {
+            if (position < countryArray.length) {
+                countryArray[position] = country;
+                System.out.println("Saved at position: " + position);
+                position++;
+            } else {
+                System.out.println("Store is full");
+            }
+        } else {
+            System.out.println("Country is null");
         }
     }
 
     Country findByName(String name) {
-        if (name != null) name = name.intern();
-
-        for (Country c : countries) {
-            if (c != null && c.name != null && c.name.intern() == name) {
-                return c;
-            }
-        }
-        return null;
-    }
-
-    State findStateByStateName(String name) {
-        if (name != null) name = name.intern();
-
-        for (Country c : countries) {
-            if (c != null) {
-                for (State s : c.states) {
-                    if (s != null && s.name != null && s.name.intern() == name) {
-                        return s;
+        if (name != null) {
+            for (int i = 0; i < countryArray.length; i++) {
+                Country country = countryArray[i];
+                if (country != null && country.name != null) {
+                    if (country.name == name) {
+                        return country;
                     }
                 }
             }
@@ -35,14 +31,18 @@ class CountryStore {
         return null;
     }
 
-    City[] findAllCityByStateName(String name) {
-        if (name != null) name = name.intern();
-
-        for (Country c : countries) {
-            if (c != null) {
-                for (State s : c.states) {
-                    if (s != null && s.name != null && s.name.intern() == name) {
-                        return s.cities;
+    State findStateByStateName(String stateName) {
+        if (stateName != null) {
+            for (int i = 0; i < countryArray.length; i++) {
+                Country country = countryArray[i];
+                if (country != null && country.states != null) {
+                    for (int j = 0; j < country.states.length; j++) {
+                        State state = country.states[j];
+                        if (state != null && state.name != null) {
+                            if (state.name == stateName) {
+                                return state;
+                            }
+                        }
                     }
                 }
             }
@@ -50,15 +50,30 @@ class CountryStore {
         return null;
     }
 
-    int findNoOfDistrictsByCityName(String name) {
-        if (name != null) name = name.intern();
+    City[] findAllCityByStateName(String stateName) {
+        State state = findStateByStateName(stateName);
+        if (state != null && state.cities != null) {
+            return state.cities;
+        }
+        return null;
+    }
 
-        for (Country c : countries) {
-            if (c != null) {
-                for (State s : c.states) {
-                    for (City city : s.cities) {
-                        if (city != null && city.name != null && city.name.intern() == name) {
-                            return city.noOfDistricts;
+    int findNoOfDistrictsByCityName(String cityName) {
+        if (cityName != null) {
+            for (int i = 0; i < countryArray.length; i++) {
+                Country country = countryArray[i];
+                if (country != null && country.states != null) {
+                    for (int j = 0; j < country.states.length; j++) {
+                        State state = country.states[j];
+                        if (state != null && state.cities != null) {
+                            for (int k = 0; k < state.cities.length; k++) {
+                                City city = state.cities[k];
+                                if (city != null && city.name != null) {
+                                    if (city.name == cityName) {
+                                        return city.noOfDistricts;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -68,17 +83,25 @@ class CountryStore {
     }
 
     Country findByCollectorName(String collectorName) {
-        if (collectorName != null) collectorName = collectorName.intern();
-
-        for (Country c : countries) {
-            if (c != null) {
-                for (State s : c.states) {
-                    for (City city : s.cities) {
-                        for (District d : city.districts) {
-                            if (d != null && d.collector != null &&
-                                d.collector.name != null &&
-                                d.collector.name.intern() == collectorName) {
-                                return c;
+        if (collectorName != null) {
+            for (int i = 0; i < countryArray.length; i++) {
+                Country country = countryArray[i];
+                if (country != null && country.states != null) {
+                    for (int j = 0; j < country.states.length; j++) {
+                        State state = country.states[j];
+                        if (state != null && state.cities != null) {
+                            for (int k = 0; k < state.cities.length; k++) {
+                                City city = state.cities[k];
+                                if (city != null && city.districts != null) {
+                                    for (int m = 0; m < city.districts.length; m++) {
+                                        District district = city.districts[m];
+                                        if (district != null && district.collector != null) {
+                                            if (district.collector.name == collectorName) {
+                                                return country;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
