@@ -1,0 +1,7 @@
+class Store {
+    String name;
+    String location;
+    int workers;
+    double revenue;
+    boolean open;
+}
