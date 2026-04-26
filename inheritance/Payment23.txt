@@ -1,0 +1,28 @@
+class Payment {
+    void processPayment() {
+        System.out.println("Processing general payment");
+    }
+}
+
+class UpiPayment extends Payment {
+    void processPayment() {
+        System.out.println("Processing UPI paymentsss");
+    }
+}
+
+class CardPayment extends Payment {
+    void processPayment() {
+        System.out.println("Processing Card payment");
+    }
+}
+
+class PaymentRunner {
+    public static void main(String[] args) {
+
+        Payment payment1 = new UpiPayment();
+        Payment payment2 = new CardPayment();
+
+        payment1.processPayment();
+        payment2.processPayment();
+    }
+}
