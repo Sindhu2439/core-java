@@ -14,6 +14,6 @@ class SecondLargest {
             }
         }
 
-        System.out.println("Second Largest: " + second);
+        System.out.println("Second Largest number is: " + second);
     }
 }
