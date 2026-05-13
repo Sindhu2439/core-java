@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 class AnagramCheck {
     public static void main(String[] args) {
-        String str1 = "listen";
-        String str2 = "silent";
+        String str1 = "listen1";
+        String str2 = "silent2";
 
         char[] a = str1.toCharArray();
         char[] b = str2.toCharArray();
