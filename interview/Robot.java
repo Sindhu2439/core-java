@@ -45,7 +45,7 @@ public class Robot {
                 "robotName='" + robotName + '\'' +
                 ", country='" + country + '\'' +
                 ", powerLevel=" + powerLevel +
-                ", height=" + height +
+                ", height1=" + height +
                 '}';
     }
 }
