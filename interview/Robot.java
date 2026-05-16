@@ -1,7 +1,8 @@
 package com.robot.details;
 
 public class Robot {
-
+       
+    int no;
     String robotName;
     String country;
     int powerLevel;
