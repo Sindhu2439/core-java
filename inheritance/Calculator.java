@@ -8,7 +8,7 @@ class Calculator {
     }
 
     void add() {
-        System.out.println("Addition: " + (number1 + number2));
+        System.out.println("Addition operation: " + (number1 + number2));
     }
 
     void subtract() {
