@@ -16,7 +16,7 @@ class Calculator {
     }
 
     void multiply() {
-        System.out.println("Multiplication: " + (number1 * number2));
+        System.out.println("Multiplication operation: " + (number1 * number2));
     }
 
     void divide() {
