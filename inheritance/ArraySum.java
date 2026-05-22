@@ -8,6 +8,6 @@ class ArraySum {
             sum = sum + numbers[i];
         }
 
-        System.out.println("Sum of array: " + sum);
+        System.out.println("Sum of array operator: " + sum);
     }
 }
