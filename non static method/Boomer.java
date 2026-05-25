@@ -34,7 +34,7 @@ class Boomer {
         System.out.println("Price: "+this.price);
         System.out.println("Quantity: "+this.quantity);
         System.out.println("Shape: "+this.shape);
-        System.out.println("PackType is: "+this.packType);
+        System.out.println("PackType is the: "+this.packType);
         System.out.println("Weight: "+this.weight);
         System.out.println("Origin: "+this.origin);
         System.out.println("SugarFree: "+this.sugarFree);
