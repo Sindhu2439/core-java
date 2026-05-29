@@ -1,6 +1,6 @@
 class ReverseWords {
     public static void main(String[] args) {
-        String str = "Java is powerfulll language";
+        String str = "Java is powerfulll language w";
         String[] words = str.split(" ");
         String result = "";
 
